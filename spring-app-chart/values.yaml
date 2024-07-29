@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: spring-app
+  repository: bansikah/spring-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "4.0"
@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 9191
+  port: 9292
 
 ingress:
   enabled: false
